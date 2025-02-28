@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - GetFit Gym</title>
+    <link rel="stylesheet" href="signup.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Join Get-Fit Gym</h2>
+        <form id="signup-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <label for="plan">Choose a Plan</label>
+            <select id="plan" name="plan" required>
+                <option value="free">Free - ₹0/month</option>
+                <option value="pro">Pro - ₹250/month</option>
+                <option value="enterprise">Enterprise - ₹500/month</option>
+            </select>
+
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <script src="signup.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>
